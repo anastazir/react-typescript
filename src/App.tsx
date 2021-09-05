@@ -1,9 +1,16 @@
+import {FC} from "react"
 import './App.css';
 
-function App() {
+const App: FC= () => {
   return (
     <div className="App">
-      
+      <div className="header">
+        <div className="inputContainer">
+          <input type="text" placeholder="Task..." />
+          <input type="number" placeholder="Deadline in days" />
+        </div>
+        <button>Add</button>
+      </div>
     </div>
   );
 }
